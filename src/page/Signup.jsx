@@ -5,7 +5,7 @@ import { UserAuth } from "../components/context/AuthContext";
 function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { user, signUp } = UserAuth();
+  const { signUp } = UserAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -23,6 +23,7 @@ function Signup() {
     <>
       <div className="w-full h-screen">
         <img
+          alt="/"
           className="hidden sm:block absolute w-full h-full object-cover"
           src="https://assets.nflxext.com/ffe/siteui/vlv3/25badb14-858b-4b1c-8b7d-2244098454d9/dc8c4de3-8e94-4fd1-98c5-be2055e5d38c/TR-tr-20220606-popsignuptwoweeks-perspective_alpha_website_small.jpg"
         />
