@@ -14,7 +14,6 @@ function Navbar() {
     }
   };
 
-  console.log(user?.email);
   return (
     <div className="flex items-center justify-between p-4 z-[100] w-full absolute">
       <Link to="/">
