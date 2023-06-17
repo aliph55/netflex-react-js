@@ -6,8 +6,10 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const { user, logIn } = UserAuth();
+  const { logIn } = UserAuth();
   const navigate = useNavigate();
+  const imgUrl =
+    "https://assets.nflxext.com/ffe/siteui/vlv3/25badb14-858b-4b1c-8b7d-2244098454d9/dc8c4de3-8e94-4fd1-98c5-be2055e5d38c/TR-tr-20220606-popsignuptwoweeks-perspective_alpha_website_small.jpg";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,8 +27,9 @@ function Login() {
     <>
       <div className="w-full h-screen">
         <img
+          alt="/"
           className="hidden sm:block absolute w-full h-full object-cover"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/25badb14-858b-4b1c-8b7d-2244098454d9/dc8c4de3-8e94-4fd1-98c5-be2055e5d38c/TR-tr-20220606-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+          src={imgUrl}
         />
         <div className="bg-black/60 fixed top-0 left-0 w-full h-screen"></div>
         <div className="fixed w-full px-4 py-24 z-50">
